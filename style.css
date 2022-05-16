@@ -1,5 +1,6 @@
 body{
     margin: 0px;
+    background-color: rgb(47, 47, 62);
 }
 .title{
     padding-top: 50px;
@@ -15,7 +16,7 @@ body{
 .row{
     display: flex;
     justify-content: center;
-    padding-top: 100px;
+    padding-top: 50px;
 
 }
 #num1,#num2{
@@ -24,18 +25,22 @@ body{
     border:none;
     border-bottom: 2px solid rgb(122, 121, 121);
     padding: 20px;
+    background-color: rgb(69, 69, 105);
+    box-shadow: 5px 5px 5px rgb(16, 20, 22);
+    border-radius: 10px;
+    color: cadetblue;
 }
 .buttons{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.btn,.btn2,.btn3,.btn4{
+.btn,.btn2,.btn3,.btn4,.btn7,.btn8{
     height: 40px;
     width: 40px;
     border: none;
     font-size: 20px;
-    color: rgb(255, 255, 248);
+    color: rgb(117, 129, 145);
     border-radius: 20%;
 }
 .btn{
@@ -50,28 +55,31 @@ body{
 .btn4{
     background-color: rgb(153, 58, 24);
 }
+.btn6{
+    border: none;
+    height: 90px;
+    width: 40px;
+    color: rgb(117, 129, 145);
+    background-color: darkslategray;
+    border-radius: 10px;
+}
+.btn7{
+    background-color: black;
+    position: absolute;
+    margin-top: 50px;
+    color:rgb(117, 129, 145);
+}
+.btn8{
+    background-color: rgb(106, 69, 20);
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 60px;
+    color:rgb(117, 129, 145);
+}
 .cardTitle{
     font-size: 40px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: rgb(146, 145, 146);
-}
-.more{
-    position: absolute;
-    height: 30px;
-    width: 30px;
-    background-color: rgb(172, 172, 172);
-    bottom: 93%;
-    left: 97%;
-    border: none;
-}
-.more1{
-    position: absolute;
-    bottom: 50%;
-    left: 80%;
-    height: 200px;
-    width: 200px;
-    font-size: 20px;
-    color: rgb(200, 201, 201);
 }
 
 

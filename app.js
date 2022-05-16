@@ -5,8 +5,10 @@ const btn2 = document.querySelector('#sub')
 const btn3 = document.querySelector('#x')
 const btn4 = document.querySelector('#dilena')
 const output = document.querySelector('#output')
-const btn5 = document.querySelector('#fun')
 const more = document.querySelector('#more')
+const clear = document.querySelector('#clear')
+const cube = document.querySelector('#xx')
+const sqrt = document.querySelector('#sqrt')
 
 function getInputValues(){
     const value1 = +num1.value
@@ -38,13 +40,26 @@ function dilenaHandler(){
     output.innerHTML = `Результат [/] = ${result}`
 }
 
+function xxHandler(){
+    const values = getInputValues()
+    const result = values[0] ** values[1]
+    output.innerHTML = `Результат [**] = ${result}`
+}
 
-function More(){
-    more.innerHTML = 'hz nahyja ja to zrobuv) POpriKoly hahahahahahahahaha Bydyt obnovu)'
+function sqrtHandler(){
+    const values = getInputValues()
+    const result = Math.sqrt(values[0])
+    output.innerHTML = `Результат по 1[sqrt] = ${result}`
+}
+
+function Clear(){
+    output.innerHTML = ``
 }
 
 btn1.addEventListener('click', addHandler)
 btn2.addEventListener('click', subHandler)
 btn3.addEventListener('click', xHandler)
 btn4.addEventListener('click', dilenaHandler)
-btn5.addEventListener('click', More)
+cube.addEventListener('click', xxHandler)
+sqrt.addEventListener('click', sqrtHandler)
+clear.addEventListener('click', Clear)
